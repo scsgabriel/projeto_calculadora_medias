@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Médias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images_projeto_2/logo.png" alt="capelo">
+            <h1>Calculadora de Médias</h1>
+        </header>
+        <form id="form-atividade">
+            <input type="text" id="nome-atividade" placeholder="Nome da atividade:" required>
+            <input type="number" id="nota-atividade" placeholder="Nota da atividade:" min="0" max="10" required>
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0">    <!  esse comando no valor 0 retira o espaço que as tabelas têm  >
+            <thead>
+                <tr>                                     <! tr é pra colocar conteúdo em uma linha na tabela>
+                    <th>Nome da Atividade</th>          <! th é um cabeçalho de uma coluna >
+                    <th>Nota</th>
+                    <th>Aprovado?</th> 
+                </tr> 
+            </thead>
+            <tbody>    
+             <! td é uma célula de dados; td recebe valores >   
+                <tfoot>                                                       <! tfoot é o rodapé >
+                    <tr>
+                        <td>Media Final</td>
+                        <td id="media-final-valor"> --- </td>
+                        <td id="media-final-resultado" > <span class="resultado-final"> --- </span> </td>  <! a tag span é usada pra manipular algo específico, até mesmo um texto pequeno dentro de um texto grande>
+                    </tr>
+                </tfoot>
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

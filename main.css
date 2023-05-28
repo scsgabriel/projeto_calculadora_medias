@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;    /* fonte selecionada do google, pelo HTML */
+}                                         /* reset da tela inteira da page */
+
+body {
+    padding-top: 100px;                          /* padding-top pq é um espaçamento interno msm, da header pro teto da page*/ 
+    background-color: rgb(207, 207, 207);      /* a cor de fundo do body da page*/
+}
+
+header {                
+    display: flex;            /*  display flex pra eles ficarem alinhados na mesma linha  */
+    align-items: center;      /* align items pra eles ficarem alinhados na vertical */
+    margin-bottom: 40px;      /* margin bottom empurra o conteúdo de baixo e cria uma margem entre eles  */
+}
+
+header img {
+    height: 36px;           /* height é o tamanho, definido em px */
+}
+
+header h1 {
+    font-size: 40px;     /* o tamanho da fonte */
+    font-weight: bold;   /* o quanto de negrito posso colocar na fonte */
+}
+
+.container {              /* configuração do container pra manter o conteúdo centralizado na tela (o conteúdo dentro do container HMTL) */
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;      /*   a margin superior e inferior é zero e a margin da esquerda e direita se ajusta automaticamente    */
+}
+
+form button {
+    background-color: rgb(17, 154, 17);
+    color: #fff;              /*  a cor do texto do buttom  */
+    font-size: 24px;            /*  o tananho da fonte do buttom  */
+    font-weight: bold;          /*  o texto do buttom em negrito tipo bold  */
+    border: none;               /*  retirando a borda do buttom */
+    cursor: pointer;           /*  ao passar o mouse por cima do buttom aparece a mãozinha  */
+    padding: 10px;             /*  o espaçamento interno do buttom  */
+    
+}
+
+form input {
+    font-size: 24px;                      /* tamanho da fonte do input  */
+    background-color: #fff;             /*  a cor interna do input */
+    border: none;                         /* retirando a borda  */
+    padding: 10px;                        /* espaçamento interno do input  */
+    border-bottom: 3px solid #9b9b9b;   /* estilo da borda inferior do buttom */
+}
+
+
+form {
+    display: flex;                       /*  por causa da borda inferior o buttom ficou menor que o input, pra corrigir isso é necessário o display flex */
+    justify-content: space-between;      /*  faz um espaçamento igualitário entre os elementos */
+    width: 100%;                         /*  o espaçamento se limita a 100%    */ 
+    max-width: 640px;                    /*                                 de 640px  */                           
+    margin-bottom: 40px;                 /*  cria uma margem entre o form e o elemento abaixo do form, empurrando esse elemento pra baixo  */
+}
+
+table th {
+    border-bottom: 2px solid #000000 ;      /*  a borda inferior da th  */
+    padding: 8px;                             /* o espaçamento interno da th  */
+    font-size: 24px;                          /* o tamanho da fonte  */
+    font-weight: bold;                        /*  fonte em negrito  */
+}
+
+table {
+    width: 100%;       /*  a largura é 100%  */
+}
+
+table td {
+    padding: 16px 0;                            /*   espaçamento superior e inferior de 8px e nas larerais de 0   */
+    text-align: center;                        /*  o text align alinha o texto na vertical, então todo o conteúdo dentro da table em td será alinhado na vertical  */
+    font-size: 18px;                           /*  o tamanho da fonte  */
+    border-bottom: 1px solid #9b9b9b;        /*   cria uma borda na parte inferior do elemento   */
+}
+
+table td img {
+    height: 30px;      /*  o tamanho da imagem  */
+}
+
+
+
+.aprovado {
+  background-color: rgb(17, 154, 17);           /*  cor de fundo pro texto aprovado   */
+  border-radius: 5px;                /*  borda arredondada  */
+  padding: 8px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.reprovado {
+    background-color: rgba(255, 0, 0, 0.63);           /*  cor de fundo pro texto reprovado  */
+    border-radius: 5px;            /*  borda arredondada  */
+    padding: 8px;
+    color: #fff;
+    font-weight: bold;
+}
