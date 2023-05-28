@@ -60,7 +60,7 @@ function atualizaTabela() {      //recebe o código de atualizar a tabela (essa 
 function atualizaMediaFinal() {       //essa function irá atualizar visualmente o resultado no HTML pelo DOM
     const mediaFinal = calculaMediaFinal();   
     
-    document.getElementById('media-final-valor').innerHTML = mediaFinal;
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2);  //limita as casas decimais em 2 casas
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinimaAprovacao ? spanAprovado : spanReprovado;
 }
 
